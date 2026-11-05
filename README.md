@@ -192,3 +192,17 @@ No `Dockerfile`, troque `--host 0.0.0.0` por `--host 127.0.0.1`. O processo inic
 - [actions/upload-artifact](https://github.com/actions/upload-artifact)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Docker para Python](https://docs.docker.com/language/python/)
+
+## Implementação CI/CD na AWS
+
+Este projeto está sendo preparado para uma pipeline de integração
+e entrega contínua utilizando GitHub Actions, Docker, Amazon ECR
+e Amazon EC2.
+
+A integração contínua realiza testes automatizados com pytest,
+verificações de qualidade com Ruff e testes de execução do
+contêiner Docker.
+
+A etapa de entrega contínua será responsável por publicar
+automaticamente as imagens Docker no Amazon ECR e atualizar
+a aplicação hospedada na Amazon EC2.
